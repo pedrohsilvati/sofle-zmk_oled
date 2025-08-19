@@ -34,14 +34,10 @@
             bindings = <&sl 4>;
             key-positions = <28 27>;
         };
-    };
 
-    macros {
-        cedilha: cedilha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp APOS &kp C>;
-            label = "CEDILHA";
+        to_navigation {
+            bindings = <&mo 5>;
+            key-positions = <52 40>;
         };
     };
 
@@ -132,11 +128,21 @@
 
         symbols {
             bindings = <
-&tog 0      &trans  &trans  &trans  &kp SLASH  &kp LESS_THAN                           &kp GREATER_THAN       &kp BACKSLASH  &trans  &trans  &trans         &kp EQUAL
-&sl 4       &trans  &trans  &trans  &kp MINUS  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp PLUS       &trans  &trans  &trans         &kp BACKSPACE
-&trans      &trans  &trans  &trans  &trans     &kp LBRC                                &kp RBRC               &trans         &trans  &trans  &trans         &trans
-&kp LSHIFT  &trans  &trans  &trans  &trans     &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &trans         &trans  &trans  &kp SEMICOLON  &trans
-                    &trans  &trans  &trans     &trans                &trans    &trans  &trans                 &trans         &trans  &trans
+&tog 0      &trans  &trans  &trans         &kp SLASH  &kp LESS_THAN                           &kp GREATER_THAN       &kp BACKSLASH  &trans  &trans  &trans         &kp EQUAL
+&sl 4       &trans  &trans  &trans         &kp MINUS  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp PLUS       &trans  &trans  &trans         &kp BACKSPACE
+&trans      &trans  &trans  &kp BACKSPACE  &trans     &kp LBRC                                &kp RBRC               &trans         &trans  &trans  &trans         &trans
+&kp LSHIFT  &trans  &trans  &trans         &trans     &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &trans         &trans  &trans  &kp SEMICOLON  &trans
+                    &trans  &trans         &trans     &trans                &trans    &trans  &trans                 &trans         &trans  &trans
+            >;
+        };
+
+        navigation {
+            bindings = <
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
