@@ -27,6 +27,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        sl_symbols {
+            bindings = <&sl 4>;
+            key-positions = <28 27>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,10 +121,10 @@
             >;
         };
 
-        layer_4 {
+        symbols {
             bindings = <
-&tog 0      &trans  &trans  &trans  &kp SLASH  &kp LESS_THAN                           &kp GREATER_THAN       &kp BACKSLASH  &trans  &trans  &trans         &trans
-&sl 4       &trans  &trans  &trans  &trans     &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &trans         &trans  &trans  &trans         &trans
+&tog 0      &trans  &trans  &trans  &kp SLASH  &kp LESS_THAN                           &kp GREATER_THAN       &kp BACKSLASH  &trans  &trans  &trans         &kp EQUAL
+&sl 4       &trans  &trans  &trans  &kp MINUS  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp PLUS       &trans  &trans  &trans         &kp BACKSPACE
 &trans      &trans  &trans  &trans  &trans     &kp LBRC                                &kp RBRC               &trans         &trans  &trans  &trans         &trans
 &kp LSHIFT  &trans  &trans  &trans  &trans     &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &trans         &trans  &trans  &kp SEMICOLON  &trans
                     &trans  &trans  &trans     &trans                &trans    &trans  &trans                 &trans         &trans  &trans
