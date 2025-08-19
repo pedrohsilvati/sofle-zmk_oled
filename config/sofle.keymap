@@ -41,6 +41,36 @@
         };
     };
 
+    macros {
+        cedilhasqt: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CEDILHA";
+        };
+
+        cedilhaapostrophe: cedilha2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp C>;
+            label = "CEDILHA2";
+        };
+
+        cedilhaapos: cedilhaapos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp C>;
+            label = "CEDILHAAPOS";
+        };
+
+        cedilhagrave: cedilha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp C>;
+            label = "CEDILHA";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -138,11 +168,11 @@
 
         navigation {
             bindings = <
-&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans       &trans        &trans         &trans              &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans       &trans        &trans         &trans              &trans
+&trans  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &trans  &cedilhasqt  &cedilhaapos  &cedilhagrave  &cedilhaapostrophe  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans       &trans        &trans         &trans              &trans
+                                &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans       &trans        &trans
             >;
         };
     };
