@@ -29,6 +29,36 @@
             bindings = <&mo 4>;
             key-positions = <52 40>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <52 28>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <52 27>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <52 26>;
+        };
+
+        r-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <57 31>;
+        };
+
+        r-backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <57 32>;
+        };
+
+        r-space {
+            bindings = <&kp SPACE>;
+            key-positions = <57 33>;
+        };
     };
 
     macros {
