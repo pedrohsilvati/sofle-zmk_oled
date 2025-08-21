@@ -153,11 +153,11 @@
 
         navigation {
             bindings = <
-&to 0   &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans          &trans          &trans           &trans     &trans
-&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans  &trans          &mmv MOVE_UP    &trans           &trans     &trans
-&to 4   &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &trans  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp RCLK  &trans
-&trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans     &trans
-                                &trans                  &trans                &trans                   &trans  &trans    &trans  &trans  &trans          &trans          &trans
+&to 0   &trans                  &trans                  &trans                &trans                   &trans                    &trans     &trans          &trans          &trans           &trans     &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans     &trans          &mmv MOVE_UP    &trans           &trans     &trans
+&to 4   &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans     &trans          &trans          &trans           &trans     &trans
+                                &trans                  &trans                &trans                   &trans  &trans    &trans  &mkp LCLK  &mkp RCLK       &trans          &trans
             >;
         };
 
