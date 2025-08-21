@@ -158,11 +158,11 @@
 
         navigation {
             bindings = <
-&to 0   &trans  &trans             &trans             &trans            &trans                    &trans     &trans          &trans          &trans           &trans          &trans
-&to 0   &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans                    &trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
-&trans  &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans                    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-&trans  &trans  &trans             &trans             &trans            &trans  &trans    &trans  &trans     &trans          &trans          &trans           &trans          &trans
-                &trans             &trans             &trans            &trans  &trans    &trans  &mkp LCLK  &mkp RCLK       &trans          &trans
+&to 0   &trans  &trans             &trans             &trans            &trans                       &trans     &trans          &trans          &trans           &trans          &trans
+&to 0   &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans                       &trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
+&trans  &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans                       &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans             &trans             &trans            &trans     &trans    &trans  &trans     &trans          &trans          &trans           &trans          &trans
+                &trans             &trans             &mkp RCLK         &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp RCLK       &trans          &trans
             >;
         };
 
