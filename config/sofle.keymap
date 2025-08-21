@@ -132,7 +132,7 @@
 &trans        &trans  &trans  &trans        &trans        &trans                          &trans          &trans          &trans        &trans     &trans         &trans
 &trans        &trans  &kp N7  &kp NUMBER_8  &kp NUMBER_9  &trans                          &kp PG_UP       &trans          &trans        &trans     &trans         &kp INSERT
 &kp CAPSLOCK  &trans  &kp N4  &kp NUMBER_5  &kp N6        &kp NUMBER_0                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &kp DELETE
-&trans        &trans  &kp N1  &kp N2        &kp N3        &trans        &trans    &sl 5   &kp PAGE_DOWN   &trans          &trans        &trans     &trans         &trans
+&trans        &trans  &kp N1  &kp N2        &kp N3        &trans        &to 4     &sl 5   &kp PAGE_DOWN   &trans          &trans        &trans     &trans         &trans
                       &trans  &trans        &trans        &trans        &trans    &trans  &trans          &trans          &trans        &trans
             >;
 
@@ -151,8 +151,8 @@
 
         navigation {
             bindings = <
-&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
+&to 0   &trans                  &trans                  &trans                &trans                   &trans                    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans                  &trans                  &trans                &trans                   &trans                    &trans          &mkp LCLK       &mkp RCLK     &kp C            &trans  &trans
 &trans  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(DOWN_ARROW))  &kp LC(LA(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))  &trans                    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans                  &trans                  &trans                &trans                   &trans  &trans    &trans  &trans          &trans          &trans        &trans           &trans  &trans
                                 &trans                  &trans                &trans                   &trans  &trans    &trans  &trans          &trans          &trans        &trans
