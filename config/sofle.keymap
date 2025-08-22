@@ -164,8 +164,8 @@
         mouse_navigation_slow {
             bindings = <
 &to 0   &trans  &trans     &trans         &trans     &trans                    &trans     &trans             &trans             &trans            &trans          &trans
-&to 0   &trans  &trans     &trans         &trans     &trans                    &trans     &msc SCRL_LEFT     &mmv MOVE_Y(-400)  &msc SCRL_RIGHT   &msc SCRL_UP    &trans
-&trans  &trans  &kp SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans     &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &msc SCRL_DOWN  &trans
+&to 0   &trans  &kp SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans     &msc SCRL_LEFT     &mmv MOVE_Y(-400)  &msc SCRL_RIGHT   &msc SCRL_UP    &trans
+&trans  &trans  &trans     &mkp RCLK      &mkp LCLK  &trans                    &trans     &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &msc SCRL_DOWN  &trans
 &trans  &trans  &trans     &trans         &trans     &trans  &trans    &trans  &trans     &trans             &trans             &trans            &trans          &trans
                 &trans     &trans         &trans     &trans  &to 0     &trans  &mkp LCLK  &mkp RCLK          &trans             &trans
             >;
