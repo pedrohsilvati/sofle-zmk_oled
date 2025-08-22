@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         sl_symbols {
-            bindings = <&sl 0>;
+            bindings = <&to 5>;
             key-positions = <28 27>;
         };
 
@@ -64,9 +64,9 @@
             key-positions = <57 33>;
         };
 
-        to_navigation_perm {
-            bindings = <&to 3>;
-            key-positions = <53 41>;
+        todefault {
+            bindings = <&to 0>;
+            key-positions = <32 27>;
         };
 
         tonavigation {
@@ -144,7 +144,7 @@
 &trans        &trans  &trans  &trans        &trans        &trans                          &trans         &trans          &trans          &trans     &trans         &trans
 &trans        &trans  &kp N7  &kp NUMBER_8  &kp NUMBER_9  &trans                          &kp PG_UP      &trans          &kp UP_ARROW    &trans     &trans         &kp INSERT
 &kp CAPSLOCK  &trans  &kp N4  &kp NUMBER_5  &kp N6        &kp NUMBER_0                    &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp BACKSPACE  &kp DELETE
-&trans        &trans  &kp N1  &kp N2        &kp N3        &trans        &to 3     &sl 5   &kp PAGE_DOWN  &trans          &trans          &trans     &trans         &trans
+&trans        &trans  &kp N1  &kp N2        &kp N3        &trans        &to 3     &sl 6   &kp PAGE_DOWN  &trans          &trans          &trans     &trans         &trans
                       &trans  &trans        &trans        &trans        &trans    &trans  &trans         &trans          &trans          &trans
             >;
 
@@ -168,6 +168,16 @@
 &trans  &trans  &kp SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans     &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &msc SCRL_DOWN  &trans
 &trans  &trans  &trans     &trans         &trans     &trans  &trans    &trans  &trans     &trans             &trans             &trans            &trans          &trans
                 &trans     &trans         &trans     &trans  &to 0     &trans  &mkp LCLK  &mkp RCLK          &trans             &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
