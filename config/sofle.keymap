@@ -76,7 +76,7 @@
 
         to_arrows_and_numbers {
             bindings = <&to 2>;
-            key-positions = <27 32>;
+            key-positions = <33 26>;
         };
     };
 
