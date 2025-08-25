@@ -78,6 +78,11 @@
             bindings = <&to 2>;
             key-positions = <26 27 28>;
         };
+
+        alt_x {
+            bindings = <&kp LA(X)>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {
