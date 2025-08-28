@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         sl_symbols {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <28 27>;
         };
 
@@ -85,7 +85,7 @@
         };
 
         r_numbers_layer {
-            bindings = <&to 7>;
+            bindings = <&to 5>;
             key-positions = <31 32 33>;
         };
     };
@@ -173,7 +173,7 @@
 &trans  &trans         &trans  &trans        &trans        &trans                                &trans         &trans                &trans          &trans     &kp CAPSLOCK  &trans
 &trans  &trans         &kp N7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                          &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &kp CAPSLOCK  &trans
 &trans  &kp LA(LCTRL)  &kp N4  &kp NUMBER_5  &kp N6        &to 0                                 &to 0          &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE    &trans
-&trans  &trans         &kp N1  &kp N2        &kp N3        &trans        &kp NUMBER_2    &sl 6   &kp PAGE_DOWN  &trans                &kp INSERT      &trans     &trans        &trans
+&trans  &trans         &kp N1  &kp N2        &kp N3        &trans        &kp NUMBER_2    &sl 7   &kp PAGE_DOWN  &trans                &kp INSERT      &trans     &trans        &trans
                        &trans  &trans        &trans        &trans        &trans          &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
             >;
 
@@ -183,7 +183,7 @@
         mouse_navigation {
             bindings = <
 &trans  &trans        &trans     &trans         &trans     &trans                    &trans     &trans          &trans          &trans           &trans          &trans
-&trans  &trans        &kt SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &kp RG(H)  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
+&trans  &trans        &kt SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
 &trans  &kp LEFT_ALT  &mo 4      &mkp RCLK      &mkp LCLK  &trans                    &kp LG(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
 &trans  &kp LC(Z)     &kp LC(X)  &kp LC(C)      &kp LC(V)  &trans  &kp N3    &trans  &trans     &kp LS(GRAVE)   &kp GRAVE       &kp LS(TAB)      &kp TAB         &trans
                       &trans     &trans         &trans     &trans  &to 0     &trans  &mkp LCLK  &mkp RCLK       &trans          &trans
@@ -200,33 +200,33 @@
             >;
         };
 
+        r_numbers {
+            bindings = <
+&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans  &kp N7  &kp N8        &kp N9  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &kp N4  &kp NUMBER_5  &kp N6  &kp N0  &trans
+&trans  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans  &kp N5    &trans  &trans  &kp N1  &kp N2        &kp N3  &trans  &trans
+                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans        &trans
+            >;
+        };
+
         fun {
             bindings = <
 &trans  &trans       &trans      &trans      &trans      &trans                    &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &kp LA(F10)  &kp LA(F7)  &kp LA(F8)  &kp LA(F9)  &trans                    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &kp LA(F11)  &kp LA(F4)  &kp LA(F5)  &kp LA(F6)  &trans                    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp LA(F12)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &trans  &kp N5    &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans  &kp LA(F12)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &trans  &kp N6    &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                      &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         bluetooth {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                                &trans         &trans         &trans         &trans          &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &trans                                &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &bt BT_CLR_ALL  &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &kp NUMBER_6    &trans  &trans         &trans         &trans         &trans          &trans         &trans
-                      &trans        &trans        &trans        &trans        &trans          &trans  &trans         &trans         &trans         &trans
-            >;
-        };
-
-        r_numbers {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8        &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp NUMBER_5  &kp N6  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N7    &trans  &trans  &kp N1  &kp N2        &kp N3  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans                          &trans         &trans         &trans         &trans          &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans                          &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &bt BT_CLR_ALL  &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &kp N7    &trans  &trans         &trans         &trans         &trans          &trans         &trans
+                      &trans        &trans        &trans        &trans        &trans    &trans  &trans         &trans         &trans         &trans
             >;
         };
     };
