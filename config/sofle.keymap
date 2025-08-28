@@ -91,10 +91,10 @@
     };
 
     macros {
-        cedilha: cedilha2 {
+        execute: cedilha2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp APOSTROPHE &kp C>;
+            bindings = <&kp LA(F2)>;
             label = "CEDILHA2";
         };
 
@@ -185,7 +185,7 @@
 &trans  &trans  &trans     &trans         &trans     &trans                    &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans          &trans
 &trans  &trans  &kt SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans                  &msc SCRL_LEFT          &mmv MOVE_UP          &msc SCRL_RIGHT          &msc SCRL_UP    &trans
 &trans  &trans  &mo 4      &mkp RCLK      &mkp LCLK  &trans                    &trans                  &mmv MOVE_LEFT          &mmv MOVE_DOWN        &mmv MOVE_RIGHT          &msc SCRL_DOWN  &trans
-&trans  &trans  &trans     &trans         &trans     &trans  &kp N3    &trans  &trans                  &kp LA(LS(GRAVE))       &kp LA(GRAVE)         &kp LA(LS(TAB))          &kp LA(TAB)     &trans
+&trans  &trans  &trans     &trans         &trans     &trans  &kp N3    &trans  &kt LEFT_ALT            &kp LS(GRAVE)           &kp GRAVE             &kp LS(TAB)              &kp TAB         &trans
                 &trans     &trans         &trans     &trans  &to 0     &trans  &mkp LCLK               &mkp RCLK               &trans                &trans
             >;
         };
