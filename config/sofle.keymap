@@ -83,6 +83,24 @@
             bindings = <&kp LA(X)>;
             key-positions = <37 38>;
         };
+
+        a+bar_to_mouse_nav_layer {
+            bindings = <&to 3>;
+            key-positions = <25 48>;
+            layers = <0 2 1 5 6>;
+        };
+
+        a+l_to_nav_layer {
+            bindings = <&to 2>;
+            key-positions = <33 25>;
+            layers = <0 3 4 6>;
+        };
+
+        a+j_to_nav_layer {
+            bindings = <&to 2>;
+            key-positions = <25 31>;
+            layers = <0 3 4 6>;
+        };
     };
 
     macros {
