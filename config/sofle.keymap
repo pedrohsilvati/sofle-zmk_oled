@@ -146,7 +146,7 @@
             bindings = <
 &trans  &trans           &trans         &trans            &trans                &trans                                         &trans         &trans         &trans         &trans        &trans       &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND         &kp DOLLAR            &kp UNDERSCORE                                 &double_quote  &single_quote  &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &trans
-&trans  &kp EQUAL        &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                          &kp GRAVE      &kp APOS       &kp TILDE      &kp CARET     &trans       &trans
+&trans  &kp EQUAL        &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                          &kp GRAVE      &kp APOS       &kp TILDE      &kp CARET     &kp DELETE   &trans
 &trans  &kp PIPE2        &kp MINUS      &kp PLUS          &kp LBRC              &kp RBRC               &kp NUMBER_1    &trans  &kp LBKT       &kp RBKT       &kp SEMI       &kp COLON     &kp BSLH     &trans
                          &trans         &trans            &trans                &trans                 &trans          &trans  &trans         &trans         &trans         &trans
             >;
