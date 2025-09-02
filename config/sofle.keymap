@@ -162,11 +162,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans         &trans            &trans                &trans                                         &trans         &trans         &trans         &trans        &trans       &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND         &kp DOLLAR            &kp UNDERSCORE                                 &double_quote  &single_quote  &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &trans
-&trans  &kp EQUAL        &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                          &kp GRAVE      &kp APOS       &kp TILDE      &kp CARET     &kp DELETE   &trans
-&trans  &kp PIPE2        &kp MINUS      &kp PLUS          &kp LBRC              &kp RBRC               &kp NUMBER_1    &trans  &kp LBKT       &kp RBKT       &kp SEMI       &kp COLON     &kp BSLH     &trans
-                         &trans         &trans            &trans                &trans                 &trans          &trans  &trans         &trans         &trans         &trans
+&trans  &trans           &trans          &trans           &trans                &trans                                         &trans         &trans         &trans         &trans        &trans      &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND        &kp DOLLAR            &kp UNDERSCORE                                 &double_quote  &single_quote  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL   &trans
+&trans  &kp MINUS        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                          &kp GRAVE      &kp APOS       &kp TILDE      &kp CARET     &kp DELETE  &trans
+&trans  &kp PIPE2        &kp PERCENT     &kp LESS_THAN    &kp GREATER_THAN      &kp PLUS               &kp NUMBER_1    &trans  &kp LBKT       &kp RBKT       &kp SEMI       &kp COLON     &kp BSLH    &trans
+                         &trans          &trans           &trans                &trans                 &trans          &trans  &trans         &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
