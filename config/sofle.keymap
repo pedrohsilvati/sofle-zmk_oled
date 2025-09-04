@@ -101,6 +101,16 @@
             key-positions = <25 31>;
             layers = <0 1 2 6>;
         };
+
+        layer_zero {
+            bindings = <&to 0>;
+            key-positions = <28 25>;
+        };
+
+        layer_onehand {
+            bindings = <&to 8>;
+            key-positions = <25 27>;
+        };
     };
 
     macros {
@@ -240,6 +250,16 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &bt BT_CLR_ALL  &trans         &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &kp N7    &trans  &trans         &trans         &trans         &trans          &trans         &trans
                       &trans        &trans        &trans        &trans        &trans    &trans  &trans         &trans         &trans         &trans
+            >;
+        };
+
+        r_mirror {
+            bindings = <
+&trans         &trans         &trans   &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ENTER      &kp P          &kp O    &kp I      &kp U   &kp Y                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp BACKSPACE  &kp RA(COMMA)  &kp L    &kp K      &kp J   &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp SLASH      &kp DOT  &kp COMMA  &kp M   &kp N   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans   &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
