@@ -24,14 +24,9 @@
     combos {
         compatible = "zmk,combos";
 
-        sl_symbols {
+        to_fun_layer {
             bindings = <&to 6>;
             key-positions = <28 27>;
-        };
-
-        to_navigation {
-            bindings = <&mo 1>;
-            key-positions = <52 40>;
         };
 
         enter {
@@ -42,26 +37,6 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <52 27>;
-        };
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <52 26>;
-        };
-
-        r-enter {
-            bindings = <&kp ENTER>;
-            key-positions = <57 31>;
-        };
-
-        r-backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <57 32>;
-        };
-
-        r-space {
-            bindings = <&kp SPACE>;
-            key-positions = <57 33>;
         };
 
         todefault {
@@ -84,32 +59,9 @@
             key-positions = <37 38>;
         };
 
-        a+bar_to_mouse_nav_layer {
-            bindings = <&to 1>;
-            key-positions = <25 48>;
-            layers = <0 4 3 5 6>;
-        };
-
-        a+l_to_nav_layer {
-            bindings = <&to 4>;
-            key-positions = <33 25>;
-            layers = <0 1 2 6>;
-        };
-
-        a+j_to_nav_layer {
-            bindings = <&to 4>;
-            key-positions = <25 31>;
-            layers = <0 1 2 6>;
-        };
-
-        layer_zero {
-            bindings = <&to 0>;
-            key-positions = <28 25>;
-        };
-
-        layer_onehand {
-            bindings = <&to 8>;
-            key-positions = <25 27>;
+        ctrl_backspace {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <52 26>;
         };
     };
 
@@ -152,7 +104,7 @@
             bindings = <
 &kp LA(LC(Q))  &kp N1  &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &kp CAPSLOCK                                       &kp N6  &kp N7  &kp ENTER  &kp N9    &kp N0         &none
 &kp ESC        &kp Q   &kp W       &kp E          &kp R              &kp T                                              &kp Y   &kp U   &kp I      &kp O     &kp P          &none
-&kp TAB        &kp A   &kp S       &kp D          &kp F              &kp G                                              &kp H   &kp J   &kp K      &kp L     &kp RA(COMMA)  &kp BACKSPACE
+&kp TAB        &kp A   &kp S       &kp D          &kp F              &kp G                                              &kp H   &kp J   &kp K      &kp L     &kp RA(COMMA)  &none
 &kp LSHFT      &kp Z   &kp X       &kp C          &kp V              &kp B         &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
                        &kp LGUI    &kp LALT       &kp LCTRL          &mo 3         &kp SPACE       &kp SPACE            &mo 4   &mo 5   &kp RALT   &kp RGUI
             >;
