@@ -26,7 +26,7 @@
 
         to_fun_layer {
             bindings = <&to 6>;
-            key-positions = <28 27>;
+            key-positions = <16 15 14>;
         };
 
         enter {
@@ -62,6 +62,11 @@
         ctrl_backspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <52 26>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <52 29>;
         };
     };
 
@@ -165,11 +170,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans         &trans  &trans        &trans        &trans                          &trans         &trans                &trans          &trans     &kp CAPSLOCK  &trans
-&trans  &trans         &kp N7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                    &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &kp CAPSLOCK  &trans
-&trans  &kp LA(LCTRL)  &kp N4  &kp NUMBER_5  &kp N6        &to 0                           &to 0          &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE    &trans
-&trans  &trans         &kp N1  &kp N2        &kp N3        &trans        &kp N4    &sl 7   &kp PAGE_DOWN  &trans                &kp INSERT      &kp COLON  &kp SLASH     &trans
-                       &trans  &trans        &trans        &trans        &trans    &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
+&trans  &trans         &trans  &trans  &trans  &trans                    &trans         &trans                &trans          &trans     &trans      &trans
+&trans  &trans         &trans  &trans  &trans  &trans                    &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &trans      &trans
+&trans  &kp LA(LCTRL)  &trans  &trans  &trans  &trans                    &trans         &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &kp N4    &sl 7   &kp PAGE_DOWN  &trans                &kp INSERT      &trans     &trans      &trans
+                       &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -181,17 +186,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8        &kp N9   &kp COLON  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp NUMBER_5  &kp N6   &kp N0     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N5    &trans  &trans  &kp N1  &kp N2        &kp N3   &kp SLASH  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans        &kp DOT
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp NUMBER_0  &kp DOT
             >;
         };
 
         fun {
             bindings = <
-&trans  &trans       &trans      &trans      &trans      &trans                    &trans  &kp F24  &kp F14  &mkp MB4  &mkp MB5  &trans
-&trans  &kp LA(F10)  &kp LA(F7)  &kp LA(F8)  &kp LA(F9)  &trans                    &trans  &kp F7   &kp F8   &kp F9    &kp F10   &trans
-&trans  &kp LA(F11)  &kp LA(F4)  &kp LA(F5)  &kp LA(F6)  &trans                    &trans  &kp F4   &kp F5   &kp F6    &kp F11   &trans
-&trans  &kp LA(F12)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &trans  &kp N6    &trans  &trans  &kp F1   &kp F2   &kp F3    &kp F12   &trans
-                     &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F24  &kp F14  &mkp MB4  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F7   &kp F8   &kp F9    &kp F10   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F4   &kp F5   &kp F6    &kp F11   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N6    &trans  &trans  &kp F1   &kp F2   &kp F3    &kp F12   &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans
             >;
         };
 
