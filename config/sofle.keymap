@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         to_fun_layer {
-            bindings = <&to 6>;
+            bindings = <&sl 6>;
             key-positions = <25 34>;
         };
 
@@ -116,11 +116,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &kp N1  &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &kp N6  &to 6  &kp ENTER  &kp N9    &kp N0         &kp CAPSLOCK
-&kp ESC        &kp Q   &kp W       &kp E          &kp R              &kp T                                            &kp Y   &kp U  &kp I      &kp O     &kp P          &none
-&kp TAB        &kp A   &kp S       &kp D          &kp F              &kp G                                            &kp H   &kp J  &kp K      &kp L     &kp RA(COMMA)  &none
-&kp LSHFT      &kp Z   &kp X       &kp C          &kp V              &kp B       &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-                       &kp LGUI    &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5  &kp RALT   &kp RGUI
+&kp LA(LC(Q))  &trans  &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6  &kp ENTER  &trans   &trans         &kp CAPSLOCK
+&kp ESC        &kp Q   &kp W     &kp E          &kp R              &kp T                                            &kp Y   &kp U  &kp I      &kp O    &kp P          &trans
+&kp TAB        &kp A   &kp S     &kp D          &kp F              &kp G                                            &kp H   &kp J  &kp K      &kp L    &kp RA(COMMA)  &trans
+&kp LSHFT      &kp Z   &kp X     &kp C          &kp V              &kp B       &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
+                       &kp LGUI  &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -138,11 +138,11 @@
 
         mouse_navigation_slow {
             bindings = <
-&trans  &trans  &trans     &trans         &trans     &trans                    &trans     &trans             &trans             &trans            &trans          &trans
-&trans  &trans  &kp SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans     &msc SCRL_LEFT     &mmv MOVE_Y(-400)  &msc SCRL_RIGHT   &msc SCRL_UP    &trans
-&trans  &trans  &trans     &mkp RCLK      &mkp LCLK  &trans                    &trans     &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &msc SCRL_DOWN  &trans
-&trans  &trans  &trans     &trans         &trans     &trans  &kp N2    &trans  &trans     &trans             &trans             &trans            &trans          &trans
-                &trans     &trans         &trans     &trans  &to 0     &trans  &mkp LCLK  &mkp RCLK          &trans             &trans
+&trans  &trans  &trans     &trans         &trans     &trans                    &trans  &trans             &trans             &trans            &trans          &trans
+&trans  &trans  &kp SPACE  &kp BACKSPACE  &kp ENTER  &trans                    &trans  &msc SCRL_LEFT     &mmv MOVE_Y(-400)  &msc SCRL_RIGHT   &msc SCRL_UP    &trans
+&trans  &trans  &trans     &mkp RCLK      &mkp LCLK  &trans                    &trans  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans     &trans         &trans     &trans  &kp N2    &trans  &trans  &trans             &trans             &trans            &trans          &trans
+                &trans     &trans         &trans     &trans  &to 0     &trans  &trans  &trans             &trans             &trans
             >;
         };
 
@@ -179,10 +179,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans         &trans  &trans  &trans  &trans                    &trans         &trans                &trans          &trans     &trans      &trans
+&trans  &trans         &trans  &trans  &trans  &trans                    &kp INS        &trans                &trans          &trans     &trans      &trans
 &trans  &trans         &trans  &trans  &trans  &trans                    &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &trans      &trans
 &trans  &kp LA(LCTRL)  &trans  &trans  &trans  &trans                    &trans         &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &kp N4    &sl 7   &kp PAGE_DOWN  &trans                &kp INSERT      &trans     &trans      &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &kp N4    &sl 7   &kp PAGE_DOWN  &trans                &trans          &trans     &trans      &trans
                        &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
             >;
 
