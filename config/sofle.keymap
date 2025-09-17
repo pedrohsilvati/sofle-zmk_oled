@@ -231,11 +231,11 @@
 
         vowels {
             bindings = <
-&trans  &trans      &trans      &trans      &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp e  &kp e  &kp e  &kp e  &trans                     &trans  &kp o  &kp o  &kp o  &kp o  &trans
-&trans  &kp a  &kp a  &kp a  &kp a  &trans                    &trans  &kp i  &kp i  &kp i  &kp i  &trans
-&trans  &trans      &trans      &trans      &trans      &trans  &kp u    &kp u  &kp u  &kp u  &kp u  &trans  &trans  &trans
-                    &trans      &trans      &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
