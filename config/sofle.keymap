@@ -133,7 +133,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "E_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&i_acute>;
+            bindings = <&kp E>, <&e_acute>;
         };
 
         a_acentos: a_acentos {
@@ -154,7 +154,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "O_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&o_acentos>;
+            bindings = <&kp O>, <&o_acute>;
         };
 
         u_acentos: u_acentos {
