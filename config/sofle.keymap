@@ -129,11 +129,39 @@
     };
 
     behaviors {
-        caps_lock_word: caps_lock_word {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_LOCK_WORD";
+        e_acentos: e_acentos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_ACENTOS";
             #binding-cells = <0>;
-            continue-list = <UNDERSCORE MINUS>;
+            bindings = <&kp E>, <&i_acute>;
+        };
+
+        a_acentos: a_acentos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "A_ACENTOS";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&a_acute>;
+        };
+
+        i_acentos: i_acentos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I_ACENTOS";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&i_acute>;
+        };
+
+        o_acentos: o_acentos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O_ACENTOS";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&o_acentos>;
+        };
+
+        u_acentos: u_acentos {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U_ACENTOS";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&u_acute>;
         };
     };
 
@@ -151,11 +179,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &trans   &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6  &kp ENTER  &trans   &trans         &kp CAPSLOCK
-&kp ESC        &kp Q    &kp W     &kp E          &kp R              &kp T                                            &kp Y   &kp U  &kp I      &kp O    &kp P          &trans
-&kp TAB        &lt 1 A  &kp S     &kp D          &kp F              &kp G                                            &kp H   &kp J  &kp K      &kp L    &kp RA(COMMA)  &trans
-&kp LSHFT      &kp Z    &kp X     &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                        &kp LGUI  &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5  &trans     &trans
+&kp LA(LC(Q))  &trans   &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6       &kp ENTER   &trans      &trans         &kp CAPSLOCK
+&kp ESC        &kp Q    &kp W     &e_acentos     &kp R              &kp T                                            &kp Y   &u_acentos  &i_acentos  &o_acentos  &kp P          &trans
+&kp TAB        &lt 1 A  &kp S     &kp D          &kp F              &kp G                                            &kp H   &kp J       &kp K       &kp L       &kp RA(COMMA)  &trans
+&kp LSHFT      &kp Z    &kp X     &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA   &kp DOT     &kp FSLH       &kp RSHFT
+                        &kp LGUI  &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5       &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
