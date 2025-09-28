@@ -179,11 +179,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &trans   &trans    &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
-&kp ESC        &kp Q    &kp W     &e_acentos     &kp R              &kp T                                            &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
-&kp TAB        &lt 1 A  &kp S     &kp D          &kp F              &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
-&kp LSHFT      &kp Z    &kp X     &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
-                        &kp LGUI  &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LA(LC(Q))  &trans   &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
+&kp ESC        &kp Q    &kp W       &e_acentos     &kp R              &kp T                                            &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
+&kp TAB        &lt 1 A  &kp S       &kp D          &kp F              &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
+&kp LSHFT      &kp Z    &kp X       &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
+                        &kp LGUI    &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -193,7 +193,7 @@
             bindings = <
 &trans  &trans        &trans     &trans     &trans     &trans                       &trans     &trans          &trans          &trans           &trans          &trans
 &trans  &trans        &trans     &trans     &trans     &trans                       &trans     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
-&trans  &kp LEFT_ALT  &mo 2      &mkp RCLK  &mkp LCLK  &trans                       &kp LG(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &kp LEFT_ALT  &mo 2      &mkp RCLK  &mkp LCLK  &to 0                        &kp LG(H)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
 &trans  &kp LC(Z)     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp N1    &trans  &trans     &kp LS(GRAVE)   &kp GRAVE       &kp LS(TAB)      &kp TAB         &trans
                       &trans     &trans     &trans     &mo 3      &trans    &trans  &mo 4      &trans          &trans          &trans
             >;
