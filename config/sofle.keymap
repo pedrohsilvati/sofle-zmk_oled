@@ -68,6 +68,11 @@
             bindings = <&kp DELETE>;
             key-positions = <52 29>;
         };
+
+        docker_layer {
+            bindings = <&sl 10>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
@@ -111,6 +116,20 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp U>;
             label = "U_ACUTE";
+        };
+
+        docker_exec: docker_exec {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp E &kp X &kp E &kp C &kp SPACE &kp MINUS &kp I &kp T &kp SPACE &kp SPACE &kp B &kp A &kp S &kp H &kp LC(LEFT_ARROW) &kp LEFT_ARROW>;
+            label = "DOCKER_EXEC";
+        };
+
+        docker_logs: docker_logs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp L &kp O &kp G &kp S &kp SPACE &kp MINUS &kp MINUS &kp T &kp A &kp I &kp L &kp SPACE &kp N1 &kp N0 &kp N0 &kp N0 &kp SPACE &kp MINUS &kp F &kp SPACE>;
+            label = "DOCKER_LOGS";
         };
     };
 
@@ -285,6 +304,16 @@
 &trans  &a_acute  &trans  &trans    &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans    &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans  &trans
                   &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+            >;
+        };
+
+        docker_layer {
+            bindings = <
+&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &docker_logs  &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans
+                &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
