@@ -322,10 +322,10 @@
 
         docker_layer {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans
-&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &docker_ps    &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &docker_logs  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans        &trans      &trans
+&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &trans        &docker_ps  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &docker_logs  &trans      &trans
+&trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans      &trans
                 &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
