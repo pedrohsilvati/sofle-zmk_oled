@@ -123,6 +123,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp E &kp X &kp E &kp C &kp SPACE &kp MINUS &kp I &kp T &kp SPACE &kp SPACE &kp B &kp A &kp S &kp H &kp LC(LEFT_ARROW) &kp LEFT_ARROW>;
             label = "DOCKER_EXEC";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         docker_logs: docker_logs {
@@ -130,6 +132,17 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp L &kp O &kp G &kp S &kp SPACE &kp MINUS &kp MINUS &kp T &kp A &kp I &kp L &kp SPACE &kp N1 &kp N0 &kp N0 &kp N0 &kp SPACE &kp MINUS &kp F &kp SPACE>;
             label = "DOCKER_LOGS";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        docker_ps: docker_ps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp SPACE &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT &kp ENTER>;
+            label = "DOCKER_PS";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
@@ -310,7 +323,7 @@
         docker_layer {
             bindings = <
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans
-&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &docker_ps    &trans  &trans
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &docker_logs  &trans  &trans
 &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans
                 &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
