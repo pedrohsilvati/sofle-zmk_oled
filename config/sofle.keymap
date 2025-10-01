@@ -139,7 +139,7 @@
         docker_ps: docker_ps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp SPACE &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT &kp ENTER>;
+            bindings = <&none &kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp SPACE &kp RA(DQT) &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp RA(DQT) &kp ENTER>;
             label = "DOCKER_PS";
             wait-ms = <1>;
             tap-ms = <1>;
