@@ -73,6 +73,16 @@
             bindings = <&sl 10>;
             key-positions = <10 11>;
         };
+
+        to_mirror_layer {
+            bindings = <&to 8>;
+            key-positions = <52 29>;
+        };
+
+        to_default_layer {
+            bindings = <&to 0>;
+            key-positions = <53 29>;
+        };
     };
 
     macros {
