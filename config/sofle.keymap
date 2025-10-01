@@ -144,6 +144,34 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        docker_rm: docker_rm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp R &kp M &kp SPACE &kp MINUS &kp F &kp SPACE>;
+            label = "DOCKER_RM";
+        };
+
+        docker_start: docker_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp S &kp T &kp A &kp R &kp T &kp SPACE>;
+            label = "DOCKER_START";
+        };
+
+        docker_stop: docker_stop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp S &kp T &kp O &kp P &kp SPACE>;
+            label = "DOCKER_STOP";
+        };
+
+        docker_inspect: docker_inspect {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp I &kp N &kp S &kp P &kp E &kp C &kp T &kp SPACE>;
+            label = "DOCKER_INSPECT";
+        };
     };
 
     behaviors {
@@ -322,11 +350,11 @@
 
         docker_layer {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans        &trans      &trans
-&trans  &trans  &trans  &docker_exec  &trans  &trans                    &trans  &trans  &trans  &trans        &docker_ps  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &docker_logs  &trans      &trans
-&trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans      &trans
-                &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans         &trans        &trans        &trans                    &trans  &trans  &trans  &trans        &trans      &trans
+&trans  &trans  &trans         &docker_exec  &docker_stop  &trans                    &trans  &trans  &trans  &trans        &docker_ps  &trans
+&trans  &trans  &docker_start  &trans        &trans        &trans                    &trans  &trans  &trans  &docker_logs  &trans      &trans
+&trans  &trans  &trans         &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans      &trans
+                &trans         &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
