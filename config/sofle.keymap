@@ -78,20 +78,6 @@
             label = "CEDILHA2";
         };
 
-        double_quote: alt_f2_layer_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
-            label = "ALT_F2_LAYER_0";
-        };
-
-        single_quote: single_quote {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
-            label = "SINGLE_QUOTE";
-        };
-
         a_acute: a_acute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -221,11 +207,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans          &trans           &trans                &trans                                   &trans         &trans         &trans         &trans        &trans      &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND        &kp DOLLAR            &kp UNDERSCORE                           &double_quote  &single_quote  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL   &trans
-&trans  &kp MINUS        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp GRAVE      &kp APOS       &kp TILDE      &kp CARET     &kp DELETE  &trans
-&trans  &kp PIPE2        &kp PERCENT     &kp LESS_THAN    &kp GREATER_THAN      &kp PLUS               &kp N3    &trans  &kp LBKT       &kp RBKT       &kp SEMI       &kp COLON     &kp BSLH    &trans
-                         &trans          &trans           &trans                &trans                 &trans    &trans  &trans         &trans         &trans         &trans
+&trans  &trans           &trans          &trans           &trans                &trans                                   &trans                 &trans                &trans         &trans        &trans      &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND        &kp DOLLAR            &kp UNDERSCORE                           &kp RA(DOUBLE_QUOTES)  &kp RA(SINGLE_QUOTE)  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL   &trans
+&trans  &kp MINUS        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp GRAVE              &kp APOS              &kp TILDE      &kp CARET     &kp DELETE  &trans
+&trans  &kp PIPE2        &kp PERCENT     &kp LESS_THAN    &kp GREATER_THAN      &kp PLUS               &kp N3    &trans  &kp LBKT               &kp RBKT              &kp SEMI       &kp COLON     &kp BSLH    &trans
+                         &trans          &trans           &trans                &trans                 &trans    &trans  &trans                 &trans                &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
