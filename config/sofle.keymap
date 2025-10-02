@@ -151,8 +151,6 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp SPACE &kp RA(DQT) &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp LS(RIGHT_BRACE) &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RA(DQT) &kp RBRC &kp LS(RIGHT_BRACE) &kp ENTER>;
             label = "DOCKER_PS";
-            wait-ms = <1>;
-            tap-ms = <1>;
         };
 
         docker_rm: docker_rm {
@@ -160,6 +158,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp R &kp M &kp SPACE &kp MINUS &kp F &kp SPACE>;
             label = "DOCKER_RM";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         docker_start: docker_start {
@@ -167,6 +167,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp S &kp T &kp A &kp R &kp T &kp SPACE>;
             label = "DOCKER_START";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         docker_stop: docker_stop {
@@ -174,6 +176,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp S &kp T &kp O &kp P &kp SPACE>;
             label = "DOCKER_STOP";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         docker_inspect: docker_inspect {
@@ -181,6 +185,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp I &kp N &kp S &kp P &kp E &kp C &kp T &kp SPACE>;
             label = "DOCKER_INSPECT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         tail: tail {
@@ -188,6 +194,8 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp A &kp I &kp L &kp SPACE &kp MINUS &kp F &kp SPACE &kp MINUS &kp N &kp SPACE &kp N1 &kp N0 &kp N0 &kp N0 &kp SPACE>;
             label = "TAIL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         docker_restart: docker_restart {
@@ -195,6 +203,8 @@
             #binding-cells = <0>;
             bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp R &kp E &kp S &kp T &kp A &kp R &kp T &kp SPACE>;
             label = "DOCKER_RESTART";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
