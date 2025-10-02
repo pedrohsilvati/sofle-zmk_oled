@@ -208,6 +208,19 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        docker_ps_with_format: docker_ps_with_format {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp EQUAL &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D)>,
+                <&macro_wait_time 10>,
+                <&kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT>;
+
+            label = "DOCKER_PS_WITH_FORMAT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     behaviors {
@@ -386,11 +399,11 @@
 
         docker_layer {
             bindings = <
-&trans  &trans  &trans         &trans        &trans           &trans                    &trans  &trans  &trans           &trans        &trans      &trans
-&trans  &trans  &trans         &docker_exec  &docker_restart  &tail                     &trans  &trans  &docker_inspect  &trans        &docker_ps  &trans
-&trans  &trans  &docker_start  &docker_stop  &docker_rm       &trans                    &trans  &trans  &trans           &docker_logs  &trans      &trans
-&trans  &trans  &trans         &trans        &trans           &trans  &trans    &trans  &trans  &trans  &trans           &trans        &trans      &trans
-                &trans         &trans        &trans           &trans  &trans    &trans  &trans  &trans  &trans           &trans
+&trans  &trans                  &trans         &trans        &trans           &trans                    &trans  &trans  &trans           &trans        &trans      &trans
+&trans  &trans                  &trans         &docker_exec  &docker_restart  &tail                     &trans  &trans  &docker_inspect  &trans        &docker_ps  &trans
+&trans  &trans                  &docker_start  &docker_stop  &docker_rm       &trans                    &trans  &trans  &trans           &docker_logs  &trans      &trans
+&trans  &docker_ps_with_format  &trans         &trans        &trans           &trans  &trans    &trans  &trans  &trans  &trans           &trans        &trans      &trans
+                                &trans         &trans        &trans           &trans  &trans    &trans  &trans  &trans  &trans           &trans
             >;
         };
     };
