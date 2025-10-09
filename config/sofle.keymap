@@ -91,13 +91,6 @@
     };
 
     macros {
-        execute: cedilha2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(F2)>;
-            label = "CEDILHA2";
-        };
-
         a_acute: a_acute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -394,11 +387,11 @@
 
         fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans                    &trans  &kp F24  &kp F14  &mkp MB4  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans    &trans                    &trans  &kp F7   &kp F8   &kp F9    &kp F10   &trans
-&trans  &trans  &trans  &trans  &execute  &trans                    &trans  &kp F4   &kp F5   &kp F6    &kp F11   &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp N6    &trans  &trans  &kp F1   &kp F2   &kp F3    &kp F12   &trans
-                &trans  &trans  &trans    &mo 1   &trans    &trans  &trans  &trans   &trans   &trans
+&trans  &trans       &trans  &trans  &trans      &trans                        &trans  &kp F24  &kp F14  &mkp MB4  &mkp MB5  &trans
+&trans  &trans       &trans  &trans  &trans      &trans                        &trans  &kp F7   &kp F8   &kp F9    &kp F10   &trans
+&trans  &trans       &trans  &trans  &kp LA(F2)  &kp LA(F4)                    &trans  &kp F4   &kp F5   &kp F6    &kp F11   &trans
+&trans  &kp LA(F12)  &trans  &trans  &trans      &trans      &kp N6    &trans  &trans  &kp F1   &kp F2   &kp F3    &kp F12   &trans
+                     &trans  &trans  &trans      &mo 1       &trans    &trans  &trans  &trans   &trans   &trans
             >;
         };
 
