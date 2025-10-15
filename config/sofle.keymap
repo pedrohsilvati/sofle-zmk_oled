@@ -320,7 +320,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "O_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&o_acute>;
+            bindings = <&kp O>, <&oo>, <&o_acute>;
         };
 
         u_acentos: u_acentos {
