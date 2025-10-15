@@ -256,6 +256,42 @@
             bindings = <&kp LC(A) &kp BACKSPACE>;
             label = "SELECT_ALL_AND_BACKSPACE";
         };
+
+        ee: ee {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp E>;
+            label = "EE";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        ii: ii {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp I>;
+            label = "II";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        oo: oo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp O>;
+            label = "OO";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        uu: uu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp U>;
+            label = "UU";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     behaviors {
@@ -263,7 +299,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "E_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&e_acute>;
+            bindings = <&kp E>, <&ee>, <&e_acute>;
         };
 
         a_acentos: a_acentos {
@@ -277,7 +313,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "I_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp I>, <&i_acute>;
+            bindings = <&kp I>, <&ii>, <&i_acute>;
         };
 
         o_acentos: o_acentos {
@@ -291,7 +327,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "U_ACENTOS";
             #binding-cells = <0>;
-            bindings = <&kp U>, <&u_acute>;
+            bindings = <&kp U>, <&uu>, <&u_acute>;
         };
     };
 
