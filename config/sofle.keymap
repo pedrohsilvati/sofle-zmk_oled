@@ -88,6 +88,11 @@
             bindings = <&sl 11>;
             key-positions = <22 23>;
         };
+
+        to_l_numbers {
+            bindings = <&to 12>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
@@ -485,6 +490,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &healthcheck  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans
+            >;
+        };
+
+        l_numbers {
+            bindings = <
+&trans  &trans                   &trans              &trans              &trans            &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                   &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt UNDERSCORE NUMBER_0  &mt COMMA NUMBER_4  &mt SLASH NUMBER_5  &mt DOT NUMBER_6  &kp COLON                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans              &trans              &trans            &trans     &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
