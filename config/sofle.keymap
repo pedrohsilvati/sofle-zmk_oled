@@ -357,7 +357,9 @@
                         &kp LGUI    &kp LALT       &kp LCTRL          &mo 3       &kp SPACE       &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp LG(LS(GREATER_THAN)) LS(LG(PG_DN))>;
         };
 
         mouse_navigation {
