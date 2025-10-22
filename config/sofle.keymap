@@ -359,7 +359,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LG(LS(GREATER_THAN)) LS(LG(PG_DN))>;
+                <&inc_dec_kp LG(LS(GREATER_THAN)) LS(LG(LESS_THAN))>;
         };
 
         mouse_navigation {
