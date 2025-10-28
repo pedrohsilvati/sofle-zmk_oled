@@ -93,6 +93,11 @@
             bindings = <&to 12>;
             key-positions = <0 1>;
         };
+
+        to_mouse_layer_left {
+            bindings = <&to 1>;
+            key-positions = <55 30>;
+        };
     };
 
     macros {
