@@ -312,8 +312,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LA(F2) &kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp LS(C) &kp O &kp D &kp A &kp RA(DOUBLE_QUOTES) &kp ENTER>,
-                <&macro_wait_time 100>;
+                <&kp LA(F2)>,
+                <&macro_wait_time 100>,
+                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp LS(C) &kp O &kp D &kp A &kp RA(DOUBLE_QUOTES) &kp ENTER>;
 
             label = "WMCTRL_CODA";
             wait-ms = <100>;
