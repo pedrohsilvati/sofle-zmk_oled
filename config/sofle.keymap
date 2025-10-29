@@ -311,8 +311,13 @@
         wmctrl_coda: wmctrl_coda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(F2) &kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp DQT &kp LS(C) &kp O &kp D &kp A &kp DQT &kp ENTER>;
+            bindings =
+                <&kp LA(F2) &kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp LS(C) &kp O &kp D &kp A &kp RA(DOUBLE_QUOTES) &kp ENTER>,
+                <&macro_wait_time 100>;
+
             label = "WMCTRL_CODA";
+            wait-ms = <100>;
+            tap-ms = <100>;
         };
     };
 
