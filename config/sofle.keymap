@@ -327,7 +327,7 @@
             bindings =
                 <&kp LA(F2)>,
                 <&macro_wait_time 50>,
-                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp RA(DOUBLE_QUOTES) &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp RA(DOUBLE_QUOTES) &kp ENTER>;
+                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp RA(DOUBLE_QUOTES) &kp ENTER>;
 
             label = "WMCTRL_GCHAT";
             wait-ms = <1>;
