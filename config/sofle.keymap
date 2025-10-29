@@ -98,6 +98,11 @@
             bindings = <&to 1>;
             key-positions = <55 30>;
         };
+
+        to_wmctrl_layer {
+            bindings = <&sl 13>;
+            key-positions = <15 45>;
+        };
     };
 
     macros {
