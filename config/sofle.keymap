@@ -320,6 +320,19 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        wmctrl_gchat: wmctrl_gchat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(F2)>,
+                <&macro_wait_time 1>,
+                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp RA(DOUBLE_QUOTES) &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp RA(DOUBLE_QUOTES) &kp ENTER>;
+
+            label = "WMCTRL_GCHAT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     behaviors {
@@ -373,7 +386,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &trans   &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &trans  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
+&kp LA(LC(Q))  &trans   &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &sl 13  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
 &kp ESC        &kp Q    &kp W       &e_acentos     &kp R              &kp T                                            &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
 &kp TAB        &lt 1 A  &kp S       &kp D          &kp F              &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
 &kp LSHFT      &kp Z    &kp X       &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
@@ -530,11 +543,11 @@
 
         wmctrl {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &wmctrl_coda  &trans  &trans  &kp W     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &wmctrl_gchat                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &wmctrl_coda  &trans  &trans         &kp W     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans        &trans  &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
