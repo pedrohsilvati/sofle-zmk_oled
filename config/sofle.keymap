@@ -388,7 +388,7 @@
             bindings = <
 &kp LA(LC(Q))  &trans   &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)  &caps_word                                       &sl 13  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
 &kp ESC        &kp Q    &kp W       &e_acentos     &kp R              &kp T                                            &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
-&kp TAB        &lt 1 A  &kp S       &kp D          &kp F              &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
+&kp TAB        &lt 1 A  &kp S       &kp D          &mt LC(F) F        &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
 &kp LSHFT      &kp Z    &kp X       &kp C          &kp V              &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
                         &kp LGUI    &kp LALT       &kp LCTRL          &mo 3       &lt 13 ENTER    &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
