@@ -101,7 +101,7 @@
 
         to_wmctrl_layer {
             bindings = <&sl 13>;
-            key-positions = <15 45>;
+            key-positions = <45 14>;
         };
     };
 
@@ -313,12 +313,12 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LA(F2)>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 1>,
                 <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp LS(C) &kp O &kp D &kp A &kp RA(DOUBLE_QUOTES) &kp ENTER>;
 
             label = "WMCTRL_CODA";
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
@@ -533,7 +533,7 @@
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans        &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &wmctrl_coda  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &wmctrl_coda  &trans  &trans  &kp W     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
