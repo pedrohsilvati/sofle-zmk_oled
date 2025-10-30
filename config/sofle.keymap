@@ -576,11 +576,11 @@
 
         wmctrl {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &wmctrl_gchat                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &wmctrl_coda  &trans  &trans         &kp W     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans        &trans  &trans         &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &wmctrl_zgdevops  &wmctrl_zgdevops17  &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans              &trans        &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans              &trans        &trans  &wmctrl_gchat                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans              &wmctrl_coda  &trans  &trans         &kp W     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans              &trans        &trans  &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
