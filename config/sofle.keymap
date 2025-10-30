@@ -308,14 +308,20 @@
         wmctrl_coda: wmctrl_coda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&wmctrl &kp LS(C) &kp O &kp D &kp A &kp ENTER>;
+            bindings =
+                <&macro_wait_time 1>,
+                <&wmctrl &kp LS(C) &kp O &kp D &kp A &kp ENTER>;
+
             label = "WMCTRL_CODA";
         };
 
         wmctrl_gchat: wmctrl_gchat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&wmctrl &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
+            bindings =
+                <&macro_wait_time 1>,
+                <&wmctrl &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
+
             label = "WMCTRL_GCHAT";
         };
 
@@ -335,10 +341,20 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&wmctrl &kp Z &kp G &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>,
-                <&macro_press>;
+                <&macro_wait_time 1>,
+                <&wmctrl &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>;
 
             label = "WMCTRL_ZGDEVOPS";
+        };
+
+        wmctrl_zgdevops17: wmctrl_zgdevops17 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_wait_time 1>,
+                <&wmctrl &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp NUMBER_1 &kp NUMBER_7 &kp ENTER>;
+
+            label = "WMCTRL_ZGDEVOPS17";
         };
     };
 
