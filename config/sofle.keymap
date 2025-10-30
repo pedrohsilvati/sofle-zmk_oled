@@ -227,7 +227,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_wait_time 100>,
-                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp EQUAL &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT>;
+                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp EQUAL &kp RA(DOUBLE_QUOTES) &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT>;
 
             label = "DOCKER_PS_WITH_FORMAT";
         };
@@ -310,8 +310,6 @@
             #binding-cells = <0>;
             bindings = <&wmctrl &kp LS(C) &kp O &kp D &kp A &kp ENTER>;
             label = "WMCTRL_CODA";
-            wait-ms = <1>;
-            tap-ms = <1>;
         };
 
         wmctrl_gchat: wmctrl_gchat {
@@ -319,8 +317,6 @@
             #binding-cells = <0>;
             bindings = <&wmctrl &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
             label = "WMCTRL_GCHAT";
-            wait-ms = <1>;
-            tap-ms = <1>;
         };
 
         wmctrl: wmctrl {
@@ -333,6 +329,16 @@
                 <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp RA(DOUBLE_QUOTES) &kp LEFT_ARROW>;
 
             label = "WMCTRL";
+        };
+
+        wmctrl_zgdevops: wmctrl_zgdevops {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&wmctrl &kp Z &kp G &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>,
+                <&macro_press>;
+
+            label = "WMCTRL_ZGDEVOPS";
         };
     };
 
