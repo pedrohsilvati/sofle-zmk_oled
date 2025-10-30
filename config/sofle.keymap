@@ -226,13 +226,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp EQUAL &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D)>,
-                <&macro_wait_time 10>,
-                <&kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT>;
+                <&macro_wait_time 100>,
+                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp P &kp S &kp SPACE &kp MINUS &kp MINUS &kp F &kp O &kp R &kp M &kp A &kp T &kp EQUAL &kp DQT &kp T &kp A &kp B &kp L &kp E &kp SPACE &kp LBRC &kp LBRC &kp DOT &kp LS(I) &kp LS(D) &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(N) &kp A &kp M &kp E &kp S &kp RBRC &kp RBRC &kp BSLH &kp T &kp LBRC &kp LBRC &kp DOT &kp LS(S) &kp T &kp A &kp T &kp U &kp S &kp RBRC &kp RBRC &kp DQT>;
 
             label = "DOCKER_PS_WITH_FORMAT";
-            wait-ms = <1>;
-            tap-ms = <1>;
         };
 
         select_all_and_copy: select_all_and_copy {
@@ -311,12 +308,7 @@
         wmctrl_coda: wmctrl_coda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(F2)>,
-                <&macro_wait_time 500>,
-                <&macro_wait_time 0>,
-                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp LS(C) &kp O &kp D &kp A &kp RA(DOUBLE_QUOTES) &kp ENTER>;
-
+            bindings = <&wmctrl &kp LS(C) &kp O &kp D &kp A &kp ENTER>;
             label = "WMCTRL_CODA";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -325,12 +317,7 @@
         wmctrl_gchat: wmctrl_gchat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LA(F2)>,
-                <&macro_wait_time 500>,
-                <&macro_wait_time 0>,
-                <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp RA(DOUBLE_QUOTES) &kp ENTER>;
-
+            bindings = <&wmctrl &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
             label = "WMCTRL_GCHAT";
             wait-ms = <1>;
             tap-ms = <1>;
