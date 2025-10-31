@@ -309,8 +309,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&wmctrl &kp LS(C) &kp O &kp D &kp A &kp ENTER>;
+                <&kp LS(C) &kp O &kp D &kp A &kp ENTER>;
 
             label = "WMCTRL_CODA";
         };
@@ -319,8 +320,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&wmctrl &kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
+                <&kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
 
             label = "WMCTRL_GCHAT";
         };
@@ -341,8 +343,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&wmctrl &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>;
+                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>;
 
             label = "WMCTRL_ZGDEVOPS";
         };
@@ -351,8 +354,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&wmctrl &kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp NUMBER_1 &kp NUMBER_7 &kp ENTER>;
+                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp NUMBER_1 &kp NUMBER_7 &kp ENTER>;
 
             label = "WMCTRL_ZGDEVOPS17";
         };
