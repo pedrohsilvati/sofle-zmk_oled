@@ -103,6 +103,11 @@
             bindings = <&sl 13>;
             key-positions = <45 14>;
         };
+
+        to_nav_layer {
+            bindings = <&to 1>;
+            key-positions = <25 48>;
+        };
     };
 
     macros {
