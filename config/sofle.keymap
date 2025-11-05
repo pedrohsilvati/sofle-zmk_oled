@@ -158,7 +158,10 @@
         docker_logs: docker_logs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp L &kp O &kp G &kp S &kp SPACE &kp MINUS &kp MINUS &kp T &kp A &kp I &kp L &kp SPACE &kp N1 &kp N0 &kp N0 &kp N0 &kp SPACE &kp MINUS &kp F &kp SPACE>;
+            bindings =
+                <&kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp L &kp O &kp G &kp S &kp SPACE &kp MINUS &kp MINUS &kp T &kp A &kp I &kp L &kp SPACE &kp N1 &kp N0 &kp N0 &kp N0 &kp SPACE &kp MINUS &kp F &kp SPACE>,
+                <&macro_press>;
+
             label = "DOCKER_LOGS";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -319,6 +322,8 @@
                 <&kp LS(C) &kp O &kp D &kp A &kp ENTER>;
 
             label = "WMCTRL_CODA";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         wmctrl_gchat: wmctrl_gchat {
@@ -330,6 +335,8 @@
                 <&kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
 
             label = "WMCTRL_GCHAT";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         wmctrl: wmctrl {
@@ -342,6 +349,8 @@
                 <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp RA(DOUBLE_QUOTES) &kp LEFT_ARROW>;
 
             label = "WMCTRL";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
 
         wmctrl_zgdevops: wmctrl_zgdevops {
