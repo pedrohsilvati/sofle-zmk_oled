@@ -345,6 +345,7 @@
             bindings =
                 <&kp LA(F2)>,
                 <&macro_wait_time 300>,
+                <&kp BACKSPACE>,
                 <&macro_wait_time 1>,
                 <&kp W &kp M &kp C &kp T &kp R &kp L &kp SPACE &kp MINUS &kp A &kp SPACE &kp RA(DOUBLE_QUOTES) &kp RA(DOUBLE_QUOTES) &kp LEFT_ARROW>;
 
