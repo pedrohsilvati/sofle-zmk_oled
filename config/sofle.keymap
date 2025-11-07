@@ -429,6 +429,60 @@
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
         };
+
+        symbol_bracket: symbol_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_BRACKET";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        symbol_brace: symbol_brace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_BRACE";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        symbol_quote: symbol_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_QUOTE";
+            bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(DOUBLE_QUOTES)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        symbol_colon: symbol_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_COLON";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        symbol_slash: symbol_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_SLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        symbol_parenthesis: symbol_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYMBOL_PARENTHESIS";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -447,8 +501,8 @@
             bindings = <
 &kp LA(LC(Q))  &trans   &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                       &sl 13  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
 &kp ESC        &kp Q    &kp W       &e_acentos     &kp R                      &kp T                                            &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
-&kp TAB        &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &hold_alt
-&kp LSHFT      &kp Z    &kp X       &kp C          &kp V                      &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
+&kp TAB        &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                            &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
+&kp LSHFT      &kp Z    &kp X       &kp C          &kp V                      &lt 9 B     &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp SLASH      &kp RSHFT
                         &kp LGUI    &kp LALT       &kp LCTRL                  &mo 3       &lt 13 SPACE    &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
@@ -489,11 +543,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans          &trans           &trans                &trans                                   &trans                 &trans                &trans         &trans        &trans      &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND        &kp DOLLAR            &kp UNDERSCORE                           &kp RA(DOUBLE_QUOTES)  &kp RA(SINGLE_QUOTE)  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL   &trans
-&trans  &kp MINUS        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp GRAVE              &kp APOS              &kp TILDE      &kp CARET     &kp DELETE  &trans
-&trans  &kp PIPE2        &kp PERCENT     &kp LESS_THAN    &kp GREATER_THAN      &kp PLUS               &kp N3    &trans  &kp LBKT               &kp RBKT              &kp SEMI       &kp COLON     &kp BSLH    &trans
-                         &trans          &trans           &trans                &trans                 &trans    &trans  &trans                 &trans                &trans         &trans
+&trans  &trans           &trans          &trans           &trans                &trans                                   &trans           &trans         &trans               &trans         &trans      &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp POUND        &kp DOLLAR            &kp UNDERSCORE                           &trans           &symbol_quote  &kp AMPERSAND        &kp ASTERISK   &kp EQUAL   &trans
+&trans  &kp MINUS        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                    &kp GRAVE        &kp APOS       &kp TILDE            &kp CARET      &kp DELETE  &trans
+&trans  &kp PIPE2        &kp PERCENT     &kp LESS_THAN    &kp GREATER_THAN      &kp PLUS               &kp N3    &trans  &symbol_bracket  &symbol_brace  &symbol_parenthesis  &symbol_colon  &kp BSLH    &trans
+                         &trans          &trans           &trans                &trans                 &trans    &trans  &trans           &trans         &trans               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
