@@ -418,7 +418,7 @@
             label = "MOD_MURPH";
             bindings = <&none>, <&none>;
 
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             mods = <(MOD_LSFT)>;
         };
     };
