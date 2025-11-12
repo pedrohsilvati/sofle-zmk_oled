@@ -382,6 +382,13 @@
             bindings = <&kt LEFT_ALT &mo 1>;
             label = "HOLD_ALT";
         };
+
+        two_keys: two_keys {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+            label = "TWO_KEYS";
+        };
     };
 
     behaviors {
@@ -616,11 +623,11 @@
 
         vowels {
             bindings = <
-&trans  &trans    &trans  &trans    &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans    &trans  &e_acute  &trans  &trans                    &trans  &u_acute  &i_acute  &o_acute  &trans  &trans
-&trans  &a_acute  &trans  &trans    &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans    &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans  &trans
-                  &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                    &trans                    &trans                    &trans                    &trans                    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &two_keys SINGLE_QUOTE A  &two_keys SINGLE_QUOTE E  &two_keys SINGLE_QUOTE I  &two_keys SINGLE_QUOTE O  &two_keys SINGLE_QUOTE U  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &two_keys CARET A         &two_keys CARET E         &two_keys CARET I         &two_keys CARET O         &two_keys CARET U         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &two_keys TILDE A         &two_keys TILDE E         &two_keys TILDE I         &two_keys TILDE O         &two_keys TILDE U         &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans                    &trans                    &trans                    &trans
             >;
         };
 
