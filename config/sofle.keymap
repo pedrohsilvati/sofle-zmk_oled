@@ -29,16 +29,6 @@
             key-positions = <25 34>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <52 28>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <52 27>;
-        };
-
         todefault {
             bindings = <&to 0>;
             key-positions = <32 27>;
@@ -62,11 +52,6 @@
         ctrl_backspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <52 26>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <52 29>;
         };
 
         docker_layer {
@@ -111,41 +96,6 @@
     };
 
     macros {
-        a_acute: a_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp A>;
-            label = "A_ACUTE";
-        };
-
-        e_acute: e_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp E>;
-            label = "E_ACUTE";
-        };
-
-        i_acute: i_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp I>;
-            label = "I_ACUTE";
-        };
-
-        o_acute: o_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp O>;
-            label = "O_ACUTE";
-        };
-
-        u_acute: u_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE &kp U>;
-            label = "U_ACUTE";
-        };
-
         docker_exec: docker_exec {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -392,41 +342,6 @@
     };
 
     behaviors {
-        e_acentos: e_acentos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "E_ACENTOS";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&ee>, <&e_acute>;
-        };
-
-        a_acentos: a_acentos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "A_ACENTOS";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&a_acute>;
-        };
-
-        i_acentos: i_acentos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "I_ACENTOS";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&ii>, <&i_acute>;
-        };
-
-        o_acentos: o_acentos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "O_ACENTOS";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&oo>, <&o_acute>;
-        };
-
-        u_acentos: u_acentos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "U_ACENTOS";
-            #binding-cells = <0>;
-            bindings = <&kp U>, <&uu>, <&u_acute>;
-        };
-
         mt_tap_preferred: mt_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TAP_PREFERRED";
@@ -506,11 +421,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &trans   &kp DELETE    &kp BACKSPACE    &kp LC(BACKSPACE)          &caps_word                                        &sl 13  &to 6       &kp ENTER      &trans             &trans         &kp CAPSLOCK
-&kp ESC        &kp Q    &kp W         &e_acentos       &kp R                      &kp T                                             &kp Y   &u_acentos  &i_acentos     &o_acentos         &kp P          &trans
-&kp TAB        &lt 1 A  &kp S         &kp D            &mt_tap_preferred LC(F) F  &kp G                                             &kp H   &kp J       &kp K          &kp L              &kp RA(COMMA)  &trans
-&kp LSHFT      &kp Z    &kp X         &kp C            &kp V                      &lt 9 B      &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M       &kp COMMA      &kp DOT            &kp SLASH      &kp RSHFT
-                        &mt LGUI ESC  &mt LALT LA(F2)  &mt LCTRL BACKSPACE        &lt 3 SPACE  &lt 13 SPACE    &kp SPACE            &mo 4   &mo 5       &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LA(LC(Q))  &trans   &kp DELETE    &kp BACKSPACE    &kp LC(BACKSPACE)          &caps_word                                        &sl 13  &to 6  &kp ENTER      &trans             &trans         &kp CAPSLOCK
+&kp ESC        &kp Q    &kp W         &kp E            &kp R                      &kp T                                             &kp Y   &kp U  &kp I          &kp O              &kp P          &trans
+&kp TAB        &lt 1 A  &kp S         &kp D            &mt_tap_preferred LC(F) F  &kp G                                             &kp H   &kp J  &kp K          &kp L              &kp RA(COMMA)  &trans
+&kp LSHFT      &kp Z    &kp X         &kp C            &kp V                      &lt 9 B      &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N   &kp M  &kp COMMA      &kp DOT            &kp SLASH      &kp RSHFT
+                        &mt LGUI ESC  &mt LALT LA(F2)  &mt LCTRL BACKSPACE        &lt 3 SPACE  &lt 13 SPACE    &lt 9 SPACE          &mo 4   &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
