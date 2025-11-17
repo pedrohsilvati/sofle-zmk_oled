@@ -227,49 +227,13 @@
             label = "SELECT_ALL_AND_BACKSPACE";
         };
 
-        ee: ee {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp E>;
-            label = "EE";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        ii: ii {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp I>;
-            label = "II";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        oo: oo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp O>;
-            label = "OO";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
-        uu: uu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp U>;
-            label = "UU";
-            wait-ms = <1>;
-            tap-ms = <1>;
-        };
-
         wmctrl_coda: wmctrl_coda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&kp LS(C) &kp O &kp D &kp A &kp ENTER>;
+                <&kp LS(C) &kp O &kp D &kp A &kp ENTER &kp ESC>;
 
             label = "WMCTRL_CODA";
             wait-ms = <0>;
@@ -282,7 +246,7 @@
             bindings =
                 <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER>;
+                <&kp G &kp O &kp O &kp G &kp L &kp E &kp SPACE &kp C &kp H &kp A &kp T &kp ENTER &kp ESC>;
 
             label = "WMCTRL_GCHAT";
             wait-ms = <0>;
@@ -310,7 +274,7 @@
             bindings =
                 <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER>;
+                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp N3 &kp N0 &kp ENTER &kp ESC>;
 
             label = "WMCTRL_ZGDEVOPS";
         };
@@ -321,7 +285,7 @@
             bindings =
                 <&wmctrl>,
                 <&macro_wait_time 1>,
-                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp NUMBER_1 &kp NUMBER_7 &kp ENTER>;
+                <&kp MINUS &kp D &kp E &kp V &kp O &kp P &kp S &kp DOT &kp NUMBER_1 &kp NUMBER_7 &kp ENTER &kp ESC>;
 
             label = "WMCTRL_ZGDEVOPS17";
         };
