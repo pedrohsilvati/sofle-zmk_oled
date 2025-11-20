@@ -93,6 +93,21 @@
             bindings = <&kp MINUS>;
             key-positions = <16 28>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <31 19>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <20 32>;
+        };
+
+        underscore {
+            bindings = <&kp LS(UNDERSCORE)>;
+            key-positions = <28 40>;
+        };
     };
 
     macros {
