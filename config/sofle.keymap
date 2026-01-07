@@ -443,11 +443,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp LA(LC(Q))  &to 1    &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                        &sl 13       &to 6  &kp ENTER         &trans             &trans         &kp CAPSLOCK
-&kp ESC        &kp Q    &kp W       &kp E          &kp R                      &kp T                                             &kp Y        &kp U  &kp I             &kp O              &kp P          &trans
-&kp TAB        &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                             &kp H        &kp J  &kp K             &kp L              &kp RA(COMMA)  &trans
-&kp LSHFT      &kp Z    &kp X       &kp C          &kp V                      &lt 9 B      &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N        &kp M  &colon_scolon_mm  &dot_comma_mm      &kp SLASH      &kp RSHFT
-                        &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE  &lt 9 LA(F2)    &mo 9                &lt 4 SPACE  &mo 5  &kp RIGHT_ALT     &kp RIGHT_CONTROL
+&none      &none    &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)              &caps_word                                        &none        &to 6  &kp ENTER         &none              &none      &kp CAPSLOCK
+&kp ESC    &kp Q    &kp W       &kp E          &kp R                          &kp T                                             &kp Y        &kp U  &kp I             &kp O              &kp P      &none
+&none      &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(MINUS) F  &kp G                                             &kp H        &kp J  &kp K             &kp L              &sl 9      &none
+&kp LSHFT  &kp Z    &kp X       &kp C          &kp V                          &kp B        &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N        &kp M  &colon_scolon_mm  &dot_comma_mm      &kp SLASH  &kp RSHFT
+                    &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0        &lt 3 SPACE  &lt 9 LA(F2)    &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT     &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
@@ -487,10 +487,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans       &trans         &trans               &trans                            &trans           &trans         &trans         &trans        &trans     &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND      &kp DOLLAR           &kp UNDERSCORE                    &trans           &symbol_quote  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL  &trans
-&trans  &kp MINUS        &trans       &trans         &symbol_parenthesis  &trans                            &symbol_bracket  &symbol_brace  &trans         &trans        &trans     &trans
-&trans  &kp PIPE2        &kp PERCENT  &kp LESS_THAN  &kp GREATER_THAN     &kp PLUS        &kp N3    &trans  &kp GRAVE        &trans         &trans         &trans        &kp BSLH   &trans
+&trans  &trans           &trans       &trans         &trans               &trans                            &trans           &trans         &trans         &trans        &trans         &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND      &kp DOLLAR           &kp UNDERSCORE                    &trans           &symbol_quote  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL      &trans
+&trans  &trans           &trans       &trans         &symbol_parenthesis  &trans                            &symbol_bracket  &symbol_brace  &trans         &trans        &kp RA(COMMA)  &trans
+&trans  &kp PIPE2        &kp PERCENT  &kp LESS_THAN  &kp GREATER_THAN     &kp PLUS        &kp N3    &trans  &kp GRAVE        &trans         &trans         &trans        &kp BSLH       &trans
                          &trans       &trans         &trans               &trans          &trans    &trans  &trans           &trans         &trans         &trans
             >;
 
@@ -508,11 +508,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans         &trans  &trans  &trans  &trans                    &kp INS        &trans                &trans          &trans     &trans      &trans
-&trans  &trans         &trans  &trans  &trans  &trans                    &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &trans      &trans
-&trans  &kp LA(LCTRL)  &trans  &trans  &trans  &trans                    &kp PAGE_DOWN  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &kp N4    &sl 7   &kp LA(LCTRL)  &trans                &trans          &trans     &trans      &trans
-                       &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
+&kp LA(LC(Q))  &trans         &trans  &trans  &trans  &trans                    &kp INS        &trans                &trans          &trans     &trans      &trans
+&trans         &trans         &trans  &trans  &trans  &trans                    &kp PG_UP      &kp HOME              &kp UP_ARROW    &kp END    &trans      &trans
+&trans         &kp LA(LCTRL)  &trans  &trans  &trans  &trans                    &kp PAGE_DOWN  &kp LEFT_ARROW        &kp DOWN_ARROW  &kp RIGHT  &kp DELETE  &trans
+&trans         &trans         &trans  &trans  &trans  &trans  &kp N4    &sl 7   &kp LA(LCTRL)  &trans                &trans          &trans     &trans      &trans
+                              &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp LA(LEFT_CONTROL)  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -520,11 +520,11 @@
 
         r_numbers {
             bindings = <
-&trans  &trans     &trans     &trans        &trans      &trans                       &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans     &trans     &kp ASTERISK  &trans      &trans                       &trans  &kp N7  &kp N8        &kp N9  &trans  &trans
-&trans  &kp UNDER  &kp COMMA  &kp SLASH     &kp PERIOD  &kp COLON                    &trans  &kp N4  &kp NUMBER_5  &kp N6  &kp N0  &trans
-&trans  &trans     &trans     &trans        &trans      &trans     &kp N5    &trans  &trans  &kp N1  &kp N2        &kp N3  &trans  &trans
-                   &trans     &trans        &trans      &trans     &trans    &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &trans     &trans        &trans      &trans                       &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans     &kp ASTERISK  &trans      &trans                       &trans  &kp N7  &kp N8        &kp N9  &trans  &trans
+&trans  &trans  &kp COMMA  &kp SLASH     &kp PERIOD  &kp COLON                    &trans  &kp N4  &kp NUMBER_5  &kp N6  &kp N0  &trans
+&trans  &trans  &trans     &trans        &trans      &trans     &kp N5    &trans  &trans  &kp N1  &kp N2        &kp N3  &trans  &trans
+                &trans     &trans        &trans      &trans     &trans    &trans  &trans  &trans  &trans        &trans
             >;
         };
 
