@@ -325,6 +325,24 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "SHIFT";
         };
+
+        nao: nao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp TILDE &kp A &kp O &kp SPACE>;
+            label = "NAO";
+            tap-ms = <0>;
+            wait-ms = <0>;
+        };
+
+        ao: ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A &kp O &kp SPACE>;
+            label = "AO";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     behaviors {
@@ -427,6 +445,20 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        n_ao_nao: n_ao_nao {
+            compatible = "zmk,behavior-tap-dance";
+            label = "N_AO_NAO";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&ao>, <&nao>;
+        };
+
+        ced_vowels_td: ced_vowels_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CED_VOWELS_TD";
+            #binding-cells = <0>;
+            bindings = <&sl 9>, <&kp RA(COMMA)>;
+        };
     };
 
     keymap {
@@ -443,10 +475,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none      &none    &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                        &none        &to 6  &kp ENTER         &none              &none      &kp CAPSLOCK
-&none      &kp Q    &kp W       &kp E          &kp R                      &kp T                                             &kp Y        &kp U  &kp I             &kp O              &kp P      &none
-&none      &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                             &kp H        &kp J  &kp K             &kp L              &sl 9      &none
-&kp LSHFT  &kp Z    &kp X       &kp C          &kp V                      &kp B        &kp NUMBER_0    &kp LS(PRINTSCREEN)  &kp N        &kp M  &colon_scolon_mm  &dot_comma_mm      &kp SLASH  &kp RSHFT
+&none      &none    &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                        &none        &to 6  &kp ENTER         &none              &none           &kp CAPSLOCK
+&none      &kp Q    &kp W       &kp E          &kp R                      &kp T                                             &kp Y        &kp U  &kp I             &kp O              &kp P           &none
+&none      &lt 1 A  &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                             &kp H        &kp J  &kp K             &kp L              &ced_vowels_td  &none
+&kp LSHFT  &kp Z    &kp X       &kp C          &kp V                      &kp B        &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &colon_scolon_mm  &dot_comma_mm      &kp SLASH       &kp RSHFT
                     &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE  &none           &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT     &kp RIGHT_CONTROL
             >;
 
