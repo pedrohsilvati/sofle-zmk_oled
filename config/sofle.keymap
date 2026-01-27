@@ -342,7 +342,8 @@
         mouse_pointer: mouse_pointer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &mo 14>;
+            bindings = <&to 1>, <&macro_wait_time 10>, <&sl 14>;
+
             label = "MOUSE_POINTER";
         };
     };
