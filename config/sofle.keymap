@@ -637,11 +637,11 @@
 
         mouse_points {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans           &trans   &trans       &kp F22      &kp F23      &kp F24
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LA(F14))  &kp F14  &kp LS(F14)  &kp LA(F14)  &kp LC(F14)  &kp LG(F14)
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LA(F15))  &kp F15  &kp LS(F15)  &kp LA(F15)  &kp LC(F15)  &kp LG(F15)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LA(F16))  &kp F16  &kp LS(F16)  &kp LA(F16)  &kp LC(F16)  &kp LG(F16)
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans   &trans       &trans
+&trans           &trans       &trans       &trans       &trans       &trans                             &trans           &trans   &trans       &trans       &trans           &trans
+&kp RS(RG(F14))  &kp RS(F14)  &kp RG(F14)  &kp RC(F14)  &kp RA(F14)  &kp RS(RA(F14))                    &kp LS(LA(F14))  &kp F14  &kp LC(F14)  &kp LA(F14)  &kp LA(LC(F14))  &kp LG(LC(F14))
+&trans           &trans       &trans       &trans       &trans       &trans                             &kp LS(LA(F15))  &kp F15  &kp LC(F15)  &kp LA(F15)  &kp LA(LC(F15))  &kp LC(LG(F15))
+&trans           &trans       &trans       &trans       &trans       &trans           &trans    &trans  &kp LS(LA(F16))  &kp F16  &kp LC(F16)  &kp LA(F16)  &kp LC(LA(F16))  &kp LC(LG(F16))
+                              &trans       &trans       &trans       &trans           &trans    &trans  &trans           &trans   &trans       &trans
             >;
         };
     };
