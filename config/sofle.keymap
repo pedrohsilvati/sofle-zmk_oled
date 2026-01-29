@@ -346,6 +346,13 @@
 
             label = "MOUSE_POINTER";
         };
+
+        mo_hold: mo_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &mo 1 &kt LEFT_ALT>;
+            label = "MO_HOLD";
+        };
     };
 
     behaviors {
@@ -498,11 +505,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none    &none             &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                        &none        &to 6  &kp ENTER      &none              &none                  &kp CAPSLOCK
-&none    &kp Q             &kp W       &kp E          &kp R                      &kp T                                             &kp Y        &kp U  &kp I          &kp O              &kp P                  &sl 9
-&kp TAB  &kp_to 1 A        &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                             &kp H        &kp J  &kp K          &kp L              &kp RA(COMMA)          &sl 9
-&none    &mt LEFT_SHIFT Z  &kp X       &kp C          &kp V                      &kp B        &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &kp MINUS      &dot_comma_mm      &mt RIGHT_SHIFT SLASH  &none
-                           &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE  &none           &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&none     &none                           &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                        &none        &to 6  &kp ENTER      &none              &none                  &kp CAPSLOCK
+&mo_hold  &kp Q                           &kp W       &kp E          &kp R                      &kp T                                             &kp Y        &kp U  &kp I          &kp O              &kp P                  &sl 9
+&kp TAB   &kp_to 1 A                      &kp S       &kp D          &mt_tap_preferred LC(F) F  &kp G                                             &kp H        &kp J  &kp K          &kp L              &kp RA(COMMA)          &sl 9
+&none     &mt_tap_preferred LEFT_SHIFT Z  &kp X       &kp C          &kp V                      &kp B        &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &kp MINUS      &dot_comma_mm      &mt RIGHT_SHIFT SLASH  &none
+                                          &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE  &none           &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
