@@ -524,11 +524,11 @@
 
         mouse_navigation {
             bindings = <
-&trans  &to 0         &trans  &trans     &trans     &trans                           &trans                     &mkp LCLK       &trans          &trans           &trans          &trans
-&trans  &trans        &trans  &trans     &trans     &kp LS(F7)                       &select_all_and_cut        &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
-&trans  &kp LEFT_ALT  &mo 2   &mkp RCLK  &mkp LCLK  &kp F7                           &kp LG(H)                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-&trans  &trans        &trans  &trans     &trans     &kp LC(A)   &kp N1    &trans     &select_all_and_backspace  &kp LS(GRAVE)   &kp GRAVE       &kp LS(TAB)      &kp TAB         &trans
-                      &trans  &trans     &trans     &mo 14      &trans    &mkp LCLK  &mo 4                      &mo 5           &mo 2           &mkp RCLK
+&kp LSHIFT  &msc SCRL_LEFT  &kp F4  &msc SCRL_RIGHT  &kp F7     &trans                           &trans                     &mkp LCLK       &trans          &trans           &trans          &trans
+&trans      &trans          &trans  &trans           &trans     &kp LS(F7)                       &select_all_and_cut        &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
+&trans      &kp LEFT_ALT    &mo 2   &mkp RCLK        &mkp LCLK  &kp F7                           &kp LG(H)                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans      &trans          &trans  &trans           &trans     &kp LC(A)   &kp N1    &trans     &select_all_and_backspace  &kp LS(GRAVE)   &kp GRAVE       &kp LS(TAB)      &kp TAB         &trans
+                            &trans  &trans           &trans     &mo 14      &trans    &mkp LCLK  &mo 4                      &mo 5           &mo 2           &mkp RCLK
             >;
         };
 
