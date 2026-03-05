@@ -350,7 +350,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         symbol_brace: symbol_brace {
@@ -359,7 +359,7 @@
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         symbol_quote: symbol_quote {
@@ -368,7 +368,7 @@
             bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(DOUBLE_QUOTES)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         symbol_colon: symbol_colon {
@@ -377,7 +377,7 @@
             bindings = <&kp SEMICOLON>, <&kp COLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         symbol_slash: symbol_slash {
@@ -395,7 +395,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         bs_del_mm: bs_del_mm {
