@@ -487,6 +487,16 @@
             flavor = "hold-preferred";
             tapping-term-ms = <250>;
         };
+
+        caps: caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS";
+            bindings = <&caps_word>, <&kp CAPSLOCK>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL)>;
+            mods = <(MOD_RCTL)>;
+        };
     };
 
     keymap {
@@ -503,7 +513,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&to 1        &none                           &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &caps_word                                              &none        &to 6  &kp ENTER      &none              &none                                &kp CAPSLOCK
+&to 1        &none                           &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &kp PRINTSCREEN                                         &none        &to 6  &kp ENTER      &none              &none                                &caps
 &none        &kp Q                           &kp W       &kp E          &kp R                      &kp T                                                   &kp Y        &kp U  &kp I          &kp O              &kp P                                &sl 9
 &kp TAB      &lt 1 A                         &kp S       &lt 1 D        &mt_tap_preferred LC(F) F  &mt LS(LC(F12)) G                                       &kp H        &kp J  &kp K          &kp L              &kp RA(COMMA)                        &sl 9
 &kp LS(TAB)  &mt_hold_prefered LEFT_SHIFT Z  &kp X       &kp C          &kp V                      &kp B              &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &kp MINUS      &dot_comma_mm      &mt_hold_prefered RIGHT_SHIFT SLASH  &none
