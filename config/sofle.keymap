@@ -350,7 +350,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
 
         symbol_brace: symbol_brace {
@@ -359,7 +359,7 @@
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         symbol_quote: symbol_quote {
@@ -368,7 +368,7 @@
             bindings = <&kp RA(SINGLE_QUOTE)>, <&kp RA(DOUBLE_QUOTES)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         symbol_colon: symbol_colon {
@@ -377,7 +377,7 @@
             bindings = <&kp SEMICOLON>, <&kp COLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         symbol_slash: symbol_slash {
@@ -395,7 +395,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         bs_del_mm: bs_del_mm {
@@ -557,11 +557,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans           &trans       &trans         &trans               &trans                      &trans           &trans         &trans         &trans        &trans     &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND      &kp DOLLAR           &trans                      &trans           &symbol_quote  &kp AMPERSAND  &kp ASTERISK  &kp EQUAL  &trans
-&trans  &trans           &trans       &trans         &symbol_parenthesis  &trans                      &symbol_bracket  &symbol_brace  &trans         &trans        &trans     &trans
-&trans  &kp PIPE2        &kp PERCENT  &kp LESS_THAN  &kp GREATER_THAN     &kp PLUS  &kp N3    &trans  &kp GRAVE        &trans         &trans         &trans        &kp BSLH   &trans
-                         &trans       &trans         &trans               &trans    &trans    &trans  &trans           &trans         &trans         &trans
+&trans  &trans           &trans       &trans         &trans               &trans                      &trans           &trans         &trans        &trans         &trans     &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp DOLLAR     &kp HASH             &trans                      &trans           &symbol_quote  &kp ASTERISK  &kp AMPERSAND  &kp EQUAL  &trans
+&trans  &trans           &trans       &trans         &symbol_parenthesis  &trans                      &symbol_bracket  &symbol_brace  &trans        &trans         &trans     &trans
+&trans  &kp PIPE2        &kp PERCENT  &kp LESS_THAN  &kp GREATER_THAN     &kp PLUS  &kp N3    &trans  &kp GRAVE        &trans         &trans        &trans         &kp BSLH   &trans
+                         &trans       &trans         &trans               &trans    &trans    &trans  &trans           &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
