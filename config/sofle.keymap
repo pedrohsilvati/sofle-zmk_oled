@@ -517,7 +517,7 @@
 &trans       &kp Q                           &kp W       &kp E          &kp R                      &mt_tap_preferred LC(LA(W)) T                                         &kp Y        &kp U  &kp I          &kp O              &kp P                                &sl 9
 &kp TAB      &kp A                           &kp S       &lt 1 D        &mt_tap_preferred LC(F) F  &mt_tap_preferred LS(LC(F12)) G                                       &kp H        &kp J  &kp K          &kp L              &kp RA(COMMA)                        &sl 9
 &kp LS(TAB)  &mt_hold_prefered LEFT_SHIFT Z  &kp X       &kp C          &kp V                      &kp B                            &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &kp MINUS      &dot_comma_mm      &mt_hold_prefered RIGHT_SHIFT SLASH  &kp LEFT_SHIFT
-                                             &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE                      &none           &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                                             &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE                      &kp ENTER       &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
