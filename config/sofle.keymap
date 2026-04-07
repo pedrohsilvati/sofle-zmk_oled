@@ -494,7 +494,6 @@
             bindings = <&caps_word>, <&kp CAPSLOCK>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL)>;
             mods = <(MOD_RCTL)>;
         };
     };
