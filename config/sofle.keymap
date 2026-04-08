@@ -513,10 +513,10 @@
 
             bindings = <
 &kp GRAVE    &trans                          &kp DELETE  &kp BACKSPACE  &kp LC(BACKSPACE)          &kp PRINTSCREEN                                                       &trans       &to 6  &kp ENTER      &trans             &trans                               &word_caps
-&trans       &kp Q                           &kp W       &kp E          &kp R                      &mt_tap_preferred LC(LA(W)) T                                         &kp Y        &kp U  &kp I          &kp O              &kp P                                &sl 9
+&mo 12       &kp Q                           &kp W       &kp E          &kp R                      &mt_tap_preferred LC(LA(W)) T                                         &kp Y        &kp U  &kp I          &kp O              &kp P                                &sl 9
 &kp TAB      &kp A                           &kp S       &lt 1 D        &mt_tap_preferred LC(F) F  &mt_tap_preferred LS(LC(F12)) G                                       &kp H        &kp J  &kp K          &kp L              &kp RA(COMMA)                        &sl 9
 &kp LS(TAB)  &mt_hold_prefered LEFT_SHIFT Z  &kp X       &kp C          &kp V                      &kp B                            &kp NUMBER_0    &kp LS(PRINTSCREEN)  &n_ao_nao    &kp M  &kp MINUS      &dot_comma_mm      &mt_hold_prefered RIGHT_SHIFT SLASH  &kp LEFT_SHIFT
-                                             &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE                      &kp ENTER       &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                                             &kp LGUI    &mt LALT ESC   &bs_del_ctrl_ht LCTRL 0    &lt 3 SPACE                      &lt 15 ENTER    &kp MINUS            &lt 4 SPACE  &mo 5  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
@@ -659,7 +659,7 @@
 
         l_numbers {
             bindings = <
-&trans  &trans                   &trans              &trans              &trans            &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans                   &trans              &trans              &trans            &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                   &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &trans                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mt UNDERSCORE NUMBER_0  &mt COMMA NUMBER_4  &mt SLASH NUMBER_5  &mt DOT NUMBER_6  &kp COLON                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans                   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -684,6 +684,16 @@
 &trans           &trans       &trans       &trans       &trans       &trans                             &kp LS(LA(F15))  &kp F15  &kp LC(F15)  &kp LA(F15)  &kp LA(LC(F15))  &kp LC(LG(F15))
 &trans           &trans       &trans       &trans       &trans       &trans           &trans    &trans  &kp LS(LA(F16))  &kp F16  &kp LC(F16)  &kp LA(F16)  &kp LC(LA(F16))  &kp LC(LG(F16))
                               &trans       &trans       &trans       &trans           &trans    &trans  &trans           &trans   &trans       &trans
+            >;
+        };
+
+        nav_left {
+            bindings = <
+&to 0   &trans  &trans    &trans        &trans     &kp INSERT                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans        &trans     &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans        &trans     &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
