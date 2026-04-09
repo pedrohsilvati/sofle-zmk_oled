@@ -331,6 +331,13 @@
 
             label = "MOUSE_POINTER";
         };
+
+        quit_vim: quit_vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp COLON &kp Q &kp EXCL>;
+            label = "QUIT_VIM";
+        };
     };
 
     behaviors {
@@ -649,11 +656,11 @@
 
         commands {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &healthcheck  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &quit_vim  &trans  &trans  &trans                    &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                    &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans                    &healthcheck  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans  &kp C     &trans  &trans        &trans  &trans  &trans  &trans  &trans
+                &trans     &trans  &trans  &trans  &trans    &trans  &trans        &trans  &trans  &trans
             >;
         };
 
