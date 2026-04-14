@@ -411,7 +411,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         bs_del_ctrl_ht: bs_del_ctrl_ht {
