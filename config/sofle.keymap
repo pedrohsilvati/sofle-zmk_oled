@@ -533,11 +533,11 @@
 
         mouse_navigation {
             bindings = <
-&to 0   &trans          &trans  &trans  &trans     &trans                           &trans                     &mkp LCLK       &trans          &trans           &trans          &trans
-&trans  &trans          &trans  &trans  &trans     &kp LS(F7)                       &select_all_and_cut        &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
-&trans  &trans          &mo 2   &trans  &mkp LCLK  &kp F7                           &kp LG(H)                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-&trans  &kp LEFT_SHIFT  &trans  &trans  &trans     &kp LC(A)   &kp N1    &trans     &select_all_and_backspace  &trans          &trans          &trans           &trans          &trans
-                        &trans  &trans  &trans     &mo 14      &trans    &mkp LCLK  &mo 4                      &mo 5           &trans          &mkp RCLK
+&to 0   &trans          &trans  &trans  &trans          &kp F4                           &trans                     &mkp LCLK       &trans          &trans           &trans          &trans
+&trans  &trans          &trans  &trans  &trans          &kp LS(F7)                       &select_all_and_cut        &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &trans
+&trans  &trans          &mo 2   &trans  &mkp LCLK       &kp F7                           &kp LG(H)                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT_SHIFT  &kp LC(A)   &kp N1    &trans     &select_all_and_backspace  &trans          &trans          &trans           &trans          &trans
+                        &trans  &trans  &trans          &mo 14      &trans    &mkp LCLK  &mo 4                      &mo 5           &trans          &mkp RCLK
             >;
         };
 
