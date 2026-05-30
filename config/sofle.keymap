@@ -696,7 +696,7 @@
 
         nav_left {
             bindings = <
-&to 0   &trans  &trans    &trans        &trans     &kp INSERT                       &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans    &kp ENTER     &trans     &kp INSERT                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP                      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans        &trans     &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
