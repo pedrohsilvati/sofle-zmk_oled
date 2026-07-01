@@ -626,7 +626,7 @@
 
         r_mirror {
             bindings = <
-&trans         &trans         &trans   &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0          &trans         &trans   &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp ENTER      &kp P          &kp O    &kp I      &kp U   &kp Y                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp BACKSPACE  &kp RA(COMMA)  &kp L    &kp K      &kp J   &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp SLASH      &kp DOT  &kp COMMA  &kp M   &kp N   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -666,11 +666,11 @@
 
         l_numbers {
             bindings = <
-&to 0   &trans                   &trans              &trans              &trans            &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                   &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt UNDERSCORE NUMBER_0  &mt COMMA NUMBER_4  &mt SLASH NUMBER_5  &mt DOT NUMBER_6  &kp COLON                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans              &trans              &trans            &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&to 0   &trans  &trans              &trans              &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9      &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mt COMMA NUMBER_4  &mt SLASH NUMBER_5  &mt DOT NUMBER_6  &kp COLON                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3      &mt NUMBER_0 UNDER  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans              &trans              &trans            &trans              &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -698,7 +698,7 @@
             bindings = <
 &to 0   &trans  &trans    &kp ENTER     &trans     &kp INSERT                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 12  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans        &trans     &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans    &trans        &trans     &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
